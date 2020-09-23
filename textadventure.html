@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        
+        
+        var name = prompt("What is your name, hero?");
+            console.log(name);
+        var weapon = prompt("What is your weapon of choice?");
+            console.log(weapon);
+        var home = prompt("Where are you from?");
+            console.log(home);
+
+        var adventure = confirm("You are the mighty "+name+" hailing from far off "+home+". Far and wide, you and your trusty "+weapon+" have seen plenty of adventures! The question is, are you in the mood for another?")
+            if( adventure === false){
+                alert("you sit down on the couch and watch mideval television")
+            }
+
+            // 
+            // 
+            // 
+            // 
+        if(adventure === true){
+            alert("You walk out of your front door")
+            var direction = prompt("Which direction will you go? to the NORTH are mountains, to the EAST are swamps, the WEST holds mysteries, and to the SOUTH is your lovely home")
+            var direction = direction.toUpperCase()
+        } 
+        if (direction === "SOUTH"){
+            alert("Chicken, bawk bawk bawk. Enjoy your chicken life in the chicken coop")
+        }
+        
+        if (direction === "NORTH"){
+            alert("You arrive at the foot of the mountains. It's cold.")
+        // combat based on roll of dice? or more choose your own adventure style?
+            alert("You hear a whistling in the air")
+            var look = confirm("do you turn to look for the source of the sound?")
+            if (look === true){ alert("just in time for the pine cone falling through the air to land on your forehead.")}
+            else{alert("you feel something piney and coney hit your head")}
+
+        }
+
+        if (direction === "WEST"){
+            alert("You don't know what you're looking at. It sure is mysterious")
+        }
+
+        if (direction === "EAST"){
+            alert("You get both of your boots stuck in the swamp mud. Why did you want to come here?")
+        }
+
+
+    </script>
+</body>
+</html>
